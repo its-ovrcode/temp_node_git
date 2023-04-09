@@ -16,3 +16,13 @@ const _ = require('lodash')
 const items = [1, [2, [3, [4, 'Four', [5]]]]]
 const newItems = _.flattenDeep(items)
 console.log(newItems)
+
+const person = {
+  name: 'Bob',
+  age: 20,
+}
+
+const newPerson = _.clone(person)
+newPerson.name = 'Alice'
+console.log(person)
+console.log(newPerson)
